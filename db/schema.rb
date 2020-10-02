@@ -35,8 +35,11 @@ ActiveRecord::Schema.define(version: 2020_10_02_051854) do
 
   create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id"
-    t.integer "category_id", null: false
-    t.integer "tweet_status_id", null: false
+    t.integer "brand_id", null: false
+    t.integer "type_id", null: false
+    t.integer "model_year_id", null: false
+    t.string "title", null: false
+    t.text "caption", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_tweets_on_user_id"
