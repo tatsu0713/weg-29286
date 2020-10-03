@@ -1,5 +1,7 @@
 class TweetsController < ApplicationController
   before_action :move_to_index, except: [:index]
+  before_action :set_tweet, only: [:show]
+
 
   def index
     @tweet = Tweet.all.order('created_at DESC')
@@ -18,6 +20,12 @@ class TweetsController < ApplicationController
     end
   end
 
+  def show
+  end
+
+  # def edit
+  # end
+
 
 
 
@@ -32,7 +40,7 @@ class TweetsController < ApplicationController
     params.require(:tweet).permit(:brand_id, :type_id, :model_year_id, :title, :caption, :image).merge(user_id: current_user.id)
   end
 
-  # def set_tweet
-  #   @tweet = Tweet.find(params[:id])
-  # end
+  def set_tweet
+    @tweet = Tweet.find(params[:id])
+  end
 end
