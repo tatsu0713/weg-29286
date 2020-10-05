@@ -1,39 +1,246 @@
 /* 商品の概要 */
 
-.item-show {
-  background-color: #f8f8f8;
+.tweet-show {
+  background-image: url("lane-3596034_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5vh 0;
+  padding: 10vh 0 40vh;
 }
 
-.item-box {
-  background-color: #FFF;
-  width: 70vw;
-  min-width: 1200px;
-  padding: 10vh 15vw;
+.tweet-boxes {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
-.item-box>.name {
-  text-align: center;
+.tweet-box {
+  background-color: rgba(255, 255, 255, 0.74);
+  width: 70%;
+  min-width: 1200px;
+  padding: 5vh 2vw 8vh;
+  display: flex;
+}
+
+.tweet-top-icon {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.title-icon {
+  font-size: 30px;
   font-weight: bold;
-  font-size: 25px;
+  font-family: cursive;
+  padding-left: 20px;
+  position: relative;
+  display: inline-block;
+  color: black;
 }
 
-.item-box-img {
-  height: 50vh;
-  width: 60vw;
+.title-icon:before, .title-icon:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 14px;
+  height: 1px;
+  border-top: solid 1px rgb(136, 80, 80);
+  border-bottom: solid 1px rgb(136, 80, 80);
+}
+
+.title-icon:before {
+  left: 7px;
+}
+
+.title-icon:after {
+  right: -16px;
+}
+
+.name-title {
+  padding-top: 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: cursive;
+  padding-left: 50px;
+  color: black;
+}
+
+.tweet-img-content {
+  height: 100%;
+}
+
+.tweet-box-img {
+  height: 65%;
+  width: 40vw;
+  min-height: 200px;
+  background-color: rgb(0, 0, 0);
+  object-fit: cover;
+  margin-bottom: 50px;
+  border: 1px solid black;
+}
+
+.tweet-details {
+  background-color:rgba(255, 255, 255, 0.397);
+  height: 90vh;
+  width: 40vw;
+  margin-left: 20px;
   min-height: 500px;
-  background-color: rgb(205, 202, 202);
-  object-fit: contain;
+  border: 1px solid black;
 }
 
-.item-price-box {
+.three-details {
+  padding: 40px 40px 40px 70px;
+}
+
+.title-detail {
+  margin-bottom: 60px;
+}
+
+.tweet-title {
+  margin-bottom: 30px;
+  padding: 5px 60px 1px 36px;
+  margin-left: -20px;
+  border-bottom: 1px solid black;
+  border-left-width: -10px;
+  width: 10vw;
+  font-family: cursive;
+  font-size: 20px;
+  position: relative;
+}
+
+.tweet-title:before, .tweet-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.tweet-title:before {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid black;
+  bottom: -10px;
+  left: 5px;
+}
+
+.tweet-title:after {
+  height: 35px;
+  border-left: 1px solid black;
+  bottom: -18px;
+  left: 14px;
+}
+
+.tweet-sentence {
+  margin-left: 30px;
+  font-family: fantasy;
+}
+
+.information-detail {
+  margin-bottom: 40px;
+}
+
+h2.car-information {
+  margin-bottom: 30px;
+  padding-left: 37px;
+  margin-left: -20px;
+  margin-right: 100px;
+  border-bottom: 1px solid black;
+  font-family: cursive;
+  font-size: 20px;
+  position: relative;
+}
+
+h2.car-information:before, h2.car-information:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+h2.car-information:before {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid black;
+  bottom: -10px;
+  left: 5px;
+}
+
+h2.car-information:after {
+  height: 35px;
+  border-left: 1px solid black;
+  bottom: -18px;
+  left: 14px;
+}
+
+.information-sentence {
+  font-family: serif;
+}
+
+.tweet-caption {
+  margin-bottom: 30px;
+  padding: 5px 60px 1px 36px;
+  margin-left: -20px;
+  border-bottom: 1px solid black;
+  border-left-width: -10px;
+  width: 10vw;
+  font-family: cursive;
+  font-size: 20px;
+  position: relative;
+}
+
+.tweet-caption:before, .tweet-caption:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.tweet-caption:before {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid black;
+  bottom: -10px;
+  left: 5px;
+}
+
+.tweet-caption:after {
+  height: 35px;
+  border-left: 1px solid black;
+  bottom: -18px;
+  left: 14px;
+}
+
+.caption-sentence {
+  /* border: 1px solid black; */
+  height: 190px;
+}
+
+.tweet-date {
+  display: flex;
+  justify-content: flex-end;
+  font-family: cursive;
+}
+
+.comment-box {
+  text-align: center;
+}
+
+.comment-sub-box {
+  width: 40vw;
+  height: 90px;
+  background-color: white;
+}
+
+
+
+
+/* .item-price-box {
   margin: 25px 0px;
   display: flex;
   align-items: center;
@@ -47,10 +254,10 @@
 
 .item-price-box>.item-postage {
   font-size: 16px;
-}
+} */
 
 
-.item-red-btn {
+/* .item-red-btn {
   text-align: center;
   background-color: #ea352d;
   font-size: 24px;
@@ -58,27 +265,27 @@
   color: #FFF;
   margin: 20px 0px;
   padding: 2vh 10vw;
-}
+} */
 
-.or-text {
+/* .or-text {
   font-size: 20px;
-}
+} */
 
-.item-destroy {
+/* .item-destroy {
   background-color: lightgray;
   text-align: center;
   font-size: 24px;
   color: black;
   margin: 20px 0px;
   padding: 2vh 10vw;
-}
+} */
 
-.item-explain-box {
+/* .item-explain-box {
   font-size: 18px;
   margin: 40px 0px;
-}
+} */
 
-.detail-table {
+/* .detail-table {
   margin-bottom: 30px;
   width: 100%;
 }
@@ -96,9 +303,9 @@
   padding: 20px;
   border: 1px solid #dedede;
   font-size: 14px;
-}
+} */
 
-.option {
+/* .option {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -114,13 +321,13 @@
   justify-content: center;
   align-items: center;
   margin-right: 20px;
-}
+} */
 
-.favorite-star-icon {
+/* .favorite-star-icon {
   margin-right: 5px;
-}
+} */
 
-.report-btn {
+/* .report-btn {
   border-radius: 40px;
   width: 15vw;
   min-width: 200px;
@@ -135,19 +342,14 @@
 
 .report-flag-icon {
   margin-right: 5px;
-}
+} */
 
 
-/* /商品の概要 */
 
-.comment-box {
-  width: 40vw;
-  background-color: #fff;
-  margin: 5vh 0;
-  text-align: center;
-}
 
-.comment-text {
+
+
+/* .comment-text {
   width: 100%;
   height: 100px;
   padding: 10px;
@@ -203,4 +405,4 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 23px;
-}
+} */

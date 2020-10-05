@@ -56,15 +56,13 @@
         </div>
       </div>
     </div>
-
-    <%# 商品一覧 %>
     <div class='item-contents'>
       <h2 class='new-title'>Posts</h2>
       <ul class='item-lists'>
         <% if @tweet.present? %>
         <% @tweet.each do |tweet| %>
           <li class='list'>
-            <%= link_to "#" do %>
+            <%= link_to tweet_path(tweet.id) do %>
             <div class='item-img-content'>
               <%= image_tag tweet.image, class: "item-img" %>
             </div>
@@ -83,8 +81,6 @@
             <% end %>
           </li>
         <% end %>
-      <%# 商品がない場合のダミー %>
-      <%# 商品がある場合は表示されないようにしましょう %>
       <% else %>
       <li class='list'>
         <%= link_to '#' do %>
@@ -104,17 +100,13 @@
         <% end %>
       </li>
       <% end %>
-      <%# //商品がある場合は表示されないようにしましょう %>
-      <%# /商品がない場合のダミー %>
       </ul>
       <% if user_signed_in? %>
       <%= link_to 'To post', new_tweet_path, class: "tweet" %>
       <% else %>
       <%= link_to 'To post', new_user_session_path, class: "tweet" %>
-        <% if user_signed_in %>
       <% end %>
     </div>
-    <%# /商品一覧 %>
   </div>
 </div>
 <%= render "shared/footer" %>
