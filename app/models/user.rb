@@ -5,6 +5,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :tweets
+  has_many :comments
   belongs_to_active_hash :favorite_car
 
   validates :nickname, presence: true
