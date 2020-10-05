@@ -8,7 +8,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5vh 0;
+  padding: 10vh 0 40vh;
+}
+
+.tweet-boxes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .tweet-box {
@@ -212,7 +218,7 @@ h2.car-information:after {
 
 .caption-sentence {
   /* border: 1px solid black; */
-  height: 220px;
+  height: 190px;
 }
 
 .tweet-date {
@@ -220,6 +226,19 @@ h2.car-information:after {
   justify-content: flex-end;
   font-family: cursive;
 }
+
+.comment-box {
+  text-align: center;
+}
+
+.comment-sub-box {
+  width: 40vw;
+  height: 90px;
+  background-color: white;
+}
+
+
+
 
 /* .item-price-box {
   margin: 25px 0px;
@@ -266,7 +285,7 @@ h2.car-information:after {
   margin: 40px 0px;
 } */
 
-.detail-table {
+/* .detail-table {
   margin-bottom: 30px;
   width: 100%;
 }
@@ -284,7 +303,7 @@ h2.car-information:after {
   padding: 20px;
   border: 1px solid #dedede;
   font-size: 14px;
-}
+} */
 
 /* .option {
   display: flex;
@@ -326,16 +345,11 @@ h2.car-information:after {
 } */
 
 
-/* /商品の概要 */
 
-.comment-box {
-  width: 40vw;
-  background-color: #fff;
-  margin: 5vh 0;
-  text-align: center;
-}
 
-.comment-text {
+
+
+/* .comment-text {
   width: 100%;
   height: 100px;
   padding: 10px;
@@ -391,4 +405,4 @@ h2.car-information:after {
   text-decoration: none;
   font-weight: bold;
   font-size: 23px;
-}
+} */

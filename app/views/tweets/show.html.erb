@@ -1,106 +1,67 @@
 <%# <%= render "shared/header" %>
 
 <div class="tweet-show">
-  <div class="tweet-box">
-    
-    <%# 投稿の画像ゾーン %>
-    <div class="tweet-sub-box">
-      <div class="tweet-top-icon">
-        <h2 class="title-weg">
-          <%= link_to "Weg", root_path, class:'title-icon' %>
-        </h2>
-        <h2 class="name-title">
-          <%= link_to @tweet.user.nickname, root_path, class:'name' %>
-        <h2>
+  <div class='tweet-boxes'>
+    <%# 投稿ゾーン %>
+    <div class="tweet-box">
+      <%# 投稿の画像ゾーン %>
+      <div class="tweet-sub-box">
+        <div class="tweet-top-icon">
+          <h2 class="title-weg">
+            <%= link_to "Weg", root_path, class:'title-icon' %>
+          </h2>
+          <h2 class="name-title">
+            <%= link_to @tweet.user.nickname, root_path, class:'name' %>
+          <h2>
+        </div>
+        <div class='tweet-img-content'>
+          <%= image_tag @tweet.image ,class:"tweet-box-img" %>
+        </div>
       </div>
-      <div class='tweet-img-content'>
-        <%= image_tag @tweet.image ,class:"tweet-box-img" %>
+      <%#/投稿の画像ゾーン%>
+      <%# 投稿の詳細ゾーン %>
+      <div class='tweet-details'>
+        <div class='three-details'>
+          <div class='title-detail'>
+            <div class='tweet-title'>
+              Title
+            </div>
+            <div class='title-sentence'>
+              <%= @tweet.title %>
+            </div>
+          </div>
+          <div class='information-detail'>
+            <h2 class='car-information'>
+              Brand ・ Type ・ Model Year
+            </h2>
+            <h2 class='information-sentence'>
+              <%= @tweet.brand[:name] %>・<%= @tweet.type[:name] %>・<%= @tweet.model_year[:name] %>
+            </h2>
+          </div>
+          <div class='caption-detail'>
+            <div class='tweet-caption'>
+              Caption
+            </div>
+            <div class='caption-sentence'>
+              <%= @tweet.caption %>
+            </div>
+          </div>
+          <div class='tweet-date'>
+            <%= l @tweet.created_at %>
+          </div>
+        </div>
+      </div>
+      <%#/投稿の詳細ゾーン %>
+    </div>
+    <%#/投稿ゾーン%>
+    <%#コメントゾーン%>
+    <div class='comment-box'>
+      <div class='comment-sub-box'>
+        <%# <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
       </div>
     </div>
-    <%#/投稿の画像ゾーン%>
-
-    <%# 投稿の詳細ゾーン %>
-    <div class='tweet-details'>
-      <div class='three-details'>
-        <div class='title-detail'>
-          <div class='tweet-title'>
-            Title
-          </div>
-          <div class='title-sentence'>
-            <%= @tweet.title %>
-          </div>
-        </div>
-        <div class='information-detail'>
-          <h2 class='car-information'>
-            Brand ・ Type ・ Model Year
-          </h2>
-          <h2 class='information-sentence'>
-            <%= @tweet.brand[:name] %>・<%= @tweet.type[:name] %>・<%= @tweet.model_year[:name] %>
-          </h2>
-        </div>
-        <div class='caption-detail'>
-          <div class='tweet-caption'>
-            Caption
-          </div>
-          <div class='caption-sentence'>
-            <%= @tweet.caption %>
-          </div>
-        </div>
-        <div class='tweet-date'>
-          <%= l @tweet.created_at %>
-        </div>
-      </div>
-    </div>
-    <%#/投稿の詳細ゾーン %>
-
+    <%#/コメントゾーン%>
   </div>
 </div>
 
 <%= render "shared/footer" %>
-
-    <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
-
-    <%# <%= link_to '商品の編集', "#", method: :get, class: "item-red-btn" %>
-    <%# <p class='or-text'>or</p>
-    <%= link_to '削除', "#", method: :delete, class:'item-destroy' %>
-
-    <%# 商品が売れていない場合はこちらを表示しましょう %>
-    <%# <%= link_to '購入画面に進む', "#" ,class:"item-red-btn"%>
-    <%# //商品が売れていない場合はこちらを表示しましょう %>
-
-    
-    <%# <div class="option">
-      <div class="favorite-btn">
-        <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-        <%# <span>お気に入り 0</span>
-      </div>
-      <div class="report-btn">
-        <%= image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20"%>
-        <%# <span>不適切な商品の通報</span>
-      </div>
-    </div> %>
-  <%# /商品の概要 %>
-
-  <%# <div class="comment-box">
-    <form>
-      <textarea class="comment-text"></textarea>
-      <p class="comment-warn">
-        相手のことを考え丁寧なコメントを心がけましょう。
-        <br>
-        不快な言葉遣いなどは利用制限や退会処分となることがあります。
-      </p>
-      <button type="submit" class="comment-btn">
-        <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
-        <%# <span>コメントする<span>
-      </button>
-    </form>
-  </div>
-  <div class="links">
-    <a href="#" class="change-item-btn">
-      ＜ 前の商品
-    </a>
-    <a href="#" class="change-item-btn">
-      後ろの商品 ＞
-    </a>
-  </div>
-  <%# <a href="/" class='another-item'><%= "商品のカテゴリー名" %>
