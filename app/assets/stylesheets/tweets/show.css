@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10vh 0 40vh;
+  padding: 3vh 0 3vh;
 }
 
 .tweet-boxes {
@@ -21,7 +21,7 @@
   background-color: rgba(255, 255, 255, 0.74);
   width: 70%;
   min-width: 1200px;
-  padding: 5vh 2vw 8vh;
+  padding: 5vh 2vw 5vh;
   display: flex;
 }
 
@@ -228,15 +228,88 @@ h2.car-information:after {
 }
 
 .comment-box {
+  margin-top: 50px;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.623);
+  width: 50vw;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .comment-sub-box {
-  width: 40vw;
-  height: 90px;
-  background-color: white;
+  margin-top: 30px;
 }
 
+.comment-area {
+  width: 25vw;
+  height: 38px;
+  font-family: cursive;
+  font-size: 15px;
+  margin-bottom: -10px;
+  padding: 5px;
+}
+
+.comment-btn {
+  font-family: cursive;
+  padding: 0 10px;
+  cursor: pointer;
+  background-color: rgb(143, 216, 216);
+}
+
+.comment-index {
+  margin-top: 20px;
+}
+
+.comment-name {
+  font-family: cursive;
+  font-size: 27px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.comment-scroller {
+  overflow: auto;
+  overflow:auto;
+  width:400px;
+  height:200px;
+  padding:20px;
+  border:1px solid #000;
+  background-color:#9cf0c286;
+  color:#000;
+  font-size:15px;
+}
+
+.comment-details {
+  margin-bottom: 20px;
+}
+
+.comment-contents {
+  text-align: left;
+  display: flex;
+  font-family: cursive;
+}
+
+.name-top {
+  font-size: 18px;
+}
+
+.comment-date {
+  margin-left: 150px;
+  font-size: 13px;
+  padding-top: 4px;
+}
+
+.comment-text {
+  text-align: left;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.name-index {
+  color: rgb(0, 119, 255);
+}
 
 
 
