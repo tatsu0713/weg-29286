@@ -136,7 +136,7 @@
 }
 
 .information-detail {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 h2.car-information {
@@ -211,8 +211,14 @@ h2.car-information:after {
 }
 
 .caption-sentence {
-  border: 1px solid black;
-  height: 200px;
+  /* border: 1px solid black; */
+  height: 220px;
+}
+
+.tweet-date {
+  display: flex;
+  justify-content: flex-end;
+  font-family: cursive;
 }
 
 /* .item-price-box {
