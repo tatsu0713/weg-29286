@@ -16,23 +16,58 @@
         </div>
         <div class='tweet-img-content'>
           <%= image_tag @tweet.image ,class:"tweet-box-img" %>
+          <div class='good-tweet'>
+            <div class='good-btn'>
+              <div class='good-total'>
+                <div id="likes_buttons<%= @tweet.id %>">
+                  <%= render partial: 'likes/like', locals: { tweet: @tweet, like: @like } %>
+                </div>
+              </div>
+            </div>
+            <div class='setting-btn'>
+              <h2 class='set-detail'>
+                🚘
+              </h2>
+            </div>
+          </div>
         </div>
+      </div>
+      <%#/投稿の画像ゾーン%>
+
+          <%# いいね機能 %>
+          <%# <div class='good-tweet'>
+            <div class='good-btn'>
+              <div class='good-total'>
+                <% if current_user.already_liked?(@tweet) %>
+                  <%# <%= button_to 'いいねを取り消す', tweet_like_path(@tweet), method: :delete %>
+                <%# <% else %>
+                  <%# <%= button_to 'いいね', tweet_likes_path(@tweet) %>
+                <%# <% end %>
+                <%# <h1 class='good-style'>Good ! : <%= @tweet.likes.count %>
+              <%# </div>
+              <% @tweet.liked_users.each do |user| %>
+                <%# <h2 class='name-style'>
+                  <%= user.nickname %>
+                <%# </h2>
+              <% end %>
+            <%# </div>
+            <div class='setting-btn'> %>
+              <%# <h2 class='set-detail'>
+                ...
+              </h2> %>
+            <%# </div> 
+          </div> %>
+          <%# /いいね機能 %>
+          <%# <div class='good-tweet'>
+            <div class='good-btn'>
+              <div class='good-total'> %>
+              <%# </div>
+            </div>
+          </div> %>
         <%# <div id="likes_buttons<%= @tweet.id %>
           <%# <%= render partial: 'likes/like', locals: { tweet: @tweet, like: @like} %>
         <%# </div> %>
-        <h3><%= @tweet.user.nickname %></h3>
-        <h3>いいね件数: <%= @tweet.likes.count %></h3>
-        <% if current_user.already_liked?(@tweet) %>
-          <%= button_to 'いいねを取り消す', tweet_like_path(@tweet), method: :delete %>
-        <% else %>
-          <%= button_to 'いいね', tweet_likes_path(@tweet) %>
-        <% end %>
-        <h2>いいねしたユーザー</h2>
-        <% @tweet.liked_users.each do |user| %>
-          <li><%= user.nickname %></li>
-        <% end %>
-      </div>
-      <%#/投稿の画像ゾーン%>
+
       <%# 投稿の詳細ゾーン %>
       <div class='tweet-details'>
         <div class='three-details'>

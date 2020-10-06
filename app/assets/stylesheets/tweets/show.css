@@ -24,6 +24,10 @@
   border: 2px solid black;
 }
 
+.tweet-sub-box {
+  display: block;
+}
+
 .tweet-top-icon {
   display: flex;
   margin-bottom: 20px;
@@ -80,8 +84,40 @@
   min-height: 200px;
   background-color: rgb(0, 0, 0);
   object-fit: cover;
-  margin-bottom: 50px;
   border: 2px solid black;
+}
+
+.good-tweet {
+  margin-top: 30px;
+  display: flex;
+  height: 80px;
+}
+
+.good-btn {
+  /* border: 1px solid black; */
+  width: 20vw;
+}
+
+.good-total {
+  display: flex;
+}
+
+
+
+.name-style {
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.setting-btn {
+  /* border: 1px solid black; */
+  width: 50px;
+  margin-left: 220px;
+}
+
+.set-detail {
+  font-size: 34px;
+  cursor: pointer;
 }
 
 .tweet-details {
