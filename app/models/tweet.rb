@@ -6,6 +6,12 @@ class Tweet < ApplicationRecord
   belongs_to_active_hash :type
   belongs_to_active_hash :model_year
   has_one_attached :image
+  has_many :likes
+  has_many :liked_users, through: :likes, source: :user
+
+  def liked_by(user)
+    Like.find_by(user_id: user.id, tweet_id: id)
+  end
 
 
   validates :title, presence: true
