@@ -1,17 +1,22 @@
-<%# <% if user_signed_in? %>
-  <%# <% unless @tweet.like_user(current_user.id).blank? %>
-    <%# <%= link_to tweet_like_path(tweet_id: @tweet.id, id: @tweet.likes[0].id), method: :delete, remote: true do %>
-      <%# <div class="vertical_like"> %>
-       <%# <%= image_tag "flag.png", size: '40x40' %>
-      <%# </div>
+<% if user_signed_in? %>
+  <% unless @tweet.like_user(current_user.id).blank? %>
+    <%= link_to tweet_like_path(tweet_id: @tweet.id, id: @tweet.likes[0].id), method: :delete, remote: true do %>
+      <div class="vertical_like">
+       <%= image_tag "parts7.png", size: '40x40' %>
+       <h1 class='good-style-first'>Good ! : <%= @tweet.likes.count %></h1>
+      </div>
     <% end %>
-  <%# <% else %>
-    <%# <%= link_to tweet_likes_path(@tweet.id), method: :post, remote: true do %>
-      <%# <div class="vertical_like">
-        <%= image_tag "camera.png", size: '40x40' %>
-      <%# </div>
+  <% else %>
+    <%= link_to tweet_likes_path(@tweet.id), method: :post, remote: true do %>
+      <div class="vertical_like">
+        <%= image_tag "parts5.png", size: '40x40' %>
+        <h1 class='good-style-second'>Good ! : <%= @tweet.likes.count %></h1>
+      </div>
     <% end %>
-  <%# <% end %>
-<%# <% end %>
-
-
+  <% end %>
+  <% @tweet.likes do |user| %>
+    <h2 class='name-style'>
+      <%= user.nickname %>
+    </h2>
+  <% end %>
+<% end %>

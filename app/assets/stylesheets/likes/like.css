@@ -1,0 +1,17 @@
+.vertical_like {
+  display: flex;
+}
+
+.good-style-first {
+  font-family: cursive;
+  color: rgb(231, 31, 31);
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+.good-style-second {
+  font-family: cursive;
+  color: rgb(105, 70, 70);
+  padding-left: 15px;
+  font-size: 20px;
+}
