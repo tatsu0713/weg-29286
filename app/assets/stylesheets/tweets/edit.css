@@ -1,0 +1,11 @@
+.tweets-sell-contents {
+  background-image: url("car-5535505_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 500px;
+}
