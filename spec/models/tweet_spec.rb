@@ -28,34 +28,33 @@ RSpec.describe Tweet, type: :model do
       it 'brand_idが1の時投稿できない' do
         @tweet.brand_id = '1'
         @tweet.valid?
-        expect(@tweet.errors.full_messages).to include("Brandを選択してください")
+        expect(@tweet.errors.full_messages).to include('Brandを選択してください')
       end
       it 'type_idが1の時投稿できない' do
         @tweet.type_id = '1'
         @tweet.valid?
-        expect(@tweet.errors.full_messages).to include("Typeを選択してください")
+        expect(@tweet.errors.full_messages).to include('Typeを選択してください')
       end
       it 'model_year_idが1の時投稿できない' do
         @tweet.model_year_id = '1'
         @tweet.valid?
-        expect(@tweet.errors.full_messages).to include("Model yearを選択してください")
+        expect(@tweet.errors.full_messages).to include('Model yearを選択してください')
       end
       it 'titleが空だと投稿できない' do
-        @tweet.title =''
+        @tweet.title = ''
         @tweet.valid?
-        expect(@tweet.errors.full_messages).to include("Titleを入力してください")
+        expect(@tweet.errors.full_messages).to include('Titleを入力してください')
       end
       it 'captionが空だと投稿できない' do
         @tweet.caption = ''
         @tweet.valid?
-        expect(@tweet.errors.full_messages).to include("Captionを入力してください")
+        expect(@tweet.errors.full_messages).to include('Captionを入力してください')
       end
       it 'imageが存在していないと投稿できない' do
         @tweet.image = nil
         @tweet.valid?
-        expect(@tweet.errors.full_messages).to include("Imageを選択してください")
+        expect(@tweet.errors.full_messages).to include('Imageを選択してください')
       end
     end
   end
 end
-
