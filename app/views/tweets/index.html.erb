@@ -59,7 +59,7 @@
     <div class='item-contents'>
       <h2 class='new-title'>Post List</h2>
       <ul class='item-lists'>
-        <% if @tweet.present? %>
+      <% if @tweet.present? %>
         <% @tweet.each do |tweet| %>
           <li class='list'>
             <%= link_to tweet_path(tweet.id) do %>
