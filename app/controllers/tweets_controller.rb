@@ -1,7 +1,6 @@
 class TweetsController < ApplicationController
-  before_action :move_to_index, except: [:index]
-  before_action :set_tweet, only: [:show]
-
+  before_action :move_to_index, except: [:index, :show]
+  before_action :set_tweet, only: [:show, :edit, :update, :destroy]
 
   def index
     @tweet = Tweet.all.order('created_at DESC')
@@ -25,12 +24,25 @@ class TweetsController < ApplicationController
     @comments = @tweet.comments.includes(:user)
   end
 
-  # def edit
-  # end
+  def edit
+  end
 
+  def update
+    @tweet.update(tweet_params)
+    if @tweet.valid?
+      redirect_to tweet_path
+    else
+      render :edit
+    end
+  end
 
-
-
+  def destroy
+    if @tweet.destroy
+      redirect_to root_path
+    else
+      render :show
+    end
+  end
 
   private
 

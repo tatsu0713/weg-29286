@@ -128,7 +128,24 @@
   width: 100px;
   position: absolute;
   left: 550px;
-  bottom: 30px;
+  bottom: 20px;
+  background-color: #ffffffa4;
+  font-size: 15px;
+  font-family: serif;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.set-down-list {
+  color: rgb(44, 43, 43);
+}
+
+.set-select-second {
+  text-align: center;
+  width: 100px;
+  position: absolute;
+  left: 550px;
+  bottom: 80px;
   background-color: #ffffffa4;
   color: rgb(148, 141, 141);
   font-size: 15px;

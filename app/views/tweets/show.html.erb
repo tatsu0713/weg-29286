@@ -28,11 +28,17 @@
               <h1 class='set-detail' id="set-lists">
                 -- Setting Menu --
               </h1>
-              <ul class="set-select" hidden id="set-down">
-                <li class="set-down-list">Edit</li>
-                <li class="set-down-list">delete</li>
-                <li class="set-down-list">My page</li>
-              </ul>
+              <% if user_signed_in? && current_user.id == @tweet.user_id %>
+                <ul class="set-select" hidden id="set-down">
+                  <li><%= link_to 'My page', root_path, class:"set-down-list" %></li>
+                  <li><%= link_to 'Edit', edit_tweet_path(@tweet.id), method: :get, class:"set-down-list" %></li>
+                  <li><%= link_to 'Delete', tweet_path(@tweet.id), method: :delete, class:"set-down-list" %></li>
+                </ul>
+              <% else %>
+                <ul class="set-select-second" hidden id="set-down">
+                  <li class="set-down-list">User page</li>
+                </ul>
+              <% end %>
             </div>
           </div>
         </div>
