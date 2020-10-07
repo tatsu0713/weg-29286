@@ -1,5 +1,3 @@
-/* 商品の概要 */
-
 .tweet-show {
   background-image: url("lane-3596034_1280.jpg");
   background-repeat: no-repeat;
@@ -8,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10vh 0 40vh;
+  padding: 3vh 0 3vh;
 }
 
 .tweet-boxes {
@@ -18,11 +16,17 @@
 }
 
 .tweet-box {
-  background-color: rgba(255, 255, 255, 0.74);
+  background-color: rgba(255, 255, 255, 0.842);
   width: 70%;
   min-width: 1200px;
-  padding: 5vh 2vw 8vh;
+  padding: 5vh 2vw 5vh;
   display: flex;
+  border: 2px solid black;
+  height: 100vh;
+}
+
+.tweet-sub-box {
+  display: block;
 }
 
 .tweet-top-icon {
@@ -81,8 +85,56 @@
   min-height: 200px;
   background-color: rgb(0, 0, 0);
   object-fit: cover;
-  margin-bottom: 50px;
-  border: 1px solid black;
+  border: 2px solid black;
+}
+
+.good-tweet {
+  margin-top: 30px;
+  display: flex;
+  height: 10vh;
+  /* border: 1px solid black; */
+}
+
+.good-btn {
+  /* border: 1px solid black; */
+  width: 20vw;
+}
+
+.good-total {
+  display: flex;
+}
+
+.name-style {
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.setting-btn {
+  /* border: 1px solid black; */
+  width: 150px;
+  height: 5vh;
+  margin-left: 130px;
+}
+
+.set-detail {
+  font-size: 18px;
+  cursor: pointer;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.set-select {
+  text-align: center;
+  width: 100px;
+  position: absolute;
+  left: 550px;
+  bottom: 30px;
+  background-color: #ffffffa4;
+  color: rgb(148, 141, 141);
+  font-size: 15px;
+  font-family: serif;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .tweet-details {
@@ -217,7 +269,6 @@ h2.car-information:after {
 }
 
 .caption-sentence {
-  /* border: 1px solid black; */
   height: 190px;
 }
 
@@ -228,181 +279,103 @@ h2.car-information:after {
 }
 
 .comment-box {
+  margin-top: 50px;
   text-align: center;
-}
-
-.comment-sub-box {
-  width: 40vw;
-  height: 90px;
-  background-color: white;
-}
-
-
-
-
-/* .item-price-box {
-  margin: 25px 0px;
+  background-color: rgba(255, 255, 255, 0.623);
+  width: 50vw;
+  height: 400px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  border: 2px solid black;
 }
 
-.item-price-box>.item-price {
-  font-size: 4vh;
-  font-weight: bold;
+.comment-sub-box {
+  margin-top: 30px;
 }
 
-.item-price-box>.item-postage {
-  font-size: 16px;
-} */
-
-
-/* .item-red-btn {
-  text-align: center;
-  background-color: #ea352d;
-  font-size: 24px;
-  font-weight: bold;
-  color: #FFF;
-  margin: 20px 0px;
-  padding: 2vh 10vw;
-} */
-
-/* .or-text {
-  font-size: 20px;
-} */
-
-/* .item-destroy {
-  background-color: lightgray;
-  text-align: center;
-  font-size: 24px;
-  color: black;
-  margin: 20px 0px;
-  padding: 2vh 10vw;
-} */
-
-/* .item-explain-box {
-  font-size: 18px;
-  margin: 40px 0px;
-} */
-
-/* .detail-table {
-  margin-bottom: 30px;
-  width: 100%;
-}
-
-.detail-item {
-  width: 20%;
-  background-color: #eee;
-  border: 1px solid #dedede;
-  font-size: 14px;
-  text-align: center;
-}
-
-.detail-value {
-  width: 80%;
-  padding: 20px;
-  border: 1px solid #dedede;
-  font-size: 14px;
-} */
-
-/* .option {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-.favorite-btn {
-  border-radius: 40px;
-  width: 15vw;
-  min-width: 200px;
-  color: rgb(249, 75, 0);
-  border: 2px solid #ffb340;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
-} */
-
-/* .favorite-star-icon {
-  margin-right: 5px;
-} */
-
-/* .report-btn {
-  border-radius: 40px;
-  width: 15vw;
-  min-width: 200px;
-
-  padding: 1vh 0;
-  color: black;
-  border: 2px solid #2d2d2d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.report-flag-icon {
-  margin-right: 5px;
-} */
-
-
-
-
-
-
-/* .comment-text {
-  width: 100%;
-  height: 100px;
-  padding: 10px;
-  border: solid 2px #dedede;
-  resize: none;
-}
-
-.comment-warn {
-  padding: 10px;
-  font-size: 14px;
-  margin: 10px 0px;
-  text-align: left;
+.comment-area {
+  width: 25vw;
+  height: 38px;
+  font-family: cursive;
+  font-size: 15px;
+  margin-bottom: -10px;
+  padding: 5px;
 }
 
 .comment-btn {
-  line-height: 48px;
-  background-color: #3CCACE;
-  border: 1px solid #3CCACE;
-  color: #fff;
-  width: 50%;
-  min-width: 150px;
-  font-size: 18px;
-  border-radius: 100px;
-  margin-bottom: 2vh;
+  font-family: cursive;
+  padding: 0 10px;
+  cursor: pointer;
+  background-color: rgb(143, 216, 216);
 }
 
-.comment-flag {
-  display: flex;
-  justify-content: center;
+.comment-index {
+  margin-top: 20px;
 }
 
-.comment-flag-icon {
-  margin: 10px 5px 0 0;
-}
-
-.links {
-  display: flex;
-  justify-content: space-between;
-  width: 50vw;
-
-}
-
-.change-item-btn {
-  font-size: 30px;
-  text-decoration: none;
-  color: #3CCACE;
-}
-
-.another-item {
-  display: block;
-  margin: 30px 0px 8px;
-  color: #3CCACE;
-  text-decoration: none;
+.comment-name {
+  font-family: cursive;
+  font-size: 27px;
   font-weight: bold;
-  font-size: 23px;
-} */
+  margin: 20px 0;
+}
+
+.comment-scroller {
+  overflow: auto;
+  overflow:auto;
+  width:400px;
+  height:200px;
+  padding:20px;
+  border:1px solid #000;
+  background-color:#ffffff8f;
+  color:#000;
+  font-size:15px;
+}
+
+.comment-details {
+  margin-bottom: 20px;
+}
+
+.comment-contents {
+  text-align: left;
+  display: flex;
+  font-family: cursive;
+}
+
+.name-top {
+  font-size: 18px;
+}
+
+.comment-date {
+  margin-left: 150px;
+  font-size: 13px;
+  padding-top: 4px;
+}
+
+.comment-text {
+  /* white-space: pre-wrap; */
+  text-align: left;
+  border: 1px solid rgb(160, 160, 160);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.name-index {
+  color: rgb(0, 119, 255);
+}
+
+.loved {
+  background-image: image-url("camera.png");
+  background-repeat: no-repeat;
+  height: 36px;
+  width: 36px;
+  background-size: 36px !important;
+}
+
+.hide-text {
+  display: block;
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+}

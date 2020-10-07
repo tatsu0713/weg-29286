@@ -16,9 +16,63 @@
         </div>
         <div class='tweet-img-content'>
           <%= image_tag @tweet.image ,class:"tweet-box-img" %>
+          <div class='good-tweet'>
+            <div class='good-btn'>
+              <div class='good-total'>
+                <div id="likes_buttons<%= @tweet.id %>">
+                  <%= render partial: 'likes/like', locals: { tweet: @tweet, like: @like } %>
+                </div>
+              </div>
+            </div>
+            <div class='setting-btn'>
+              <h1 class='set-detail' id="set-lists">
+                -- Setting Menu --
+              </h1>
+              <ul class="set-select" hidden id="set-down">
+                <li class="set-down-list">Edit</li>
+                <li class="set-down-list">delete</li>
+                <li class="set-down-list">My page</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <%#/投稿の画像ゾーン%>
+
+          <%# いいね機能 %>
+          <%# <div class='good-tweet'>
+            <div class='good-btn'>
+              <div class='good-total'>
+                <% if current_user.already_liked?(@tweet) %>
+                  <%# <%= button_to 'いいねを取り消す', tweet_like_path(@tweet), method: :delete %>
+                <%# <% else %>
+                  <%# <%= button_to 'いいね', tweet_likes_path(@tweet) %>
+                <%# <% end %>
+                <%# <h1 class='good-style'>Good ! : <%= @tweet.likes.count %>
+              <%# </div>
+              <% @tweet.liked_users.each do |user| %>
+                <%# <h2 class='name-style'>
+                  <%= user.nickname %>
+                <%# </h2>
+              <% end %>
+            <%# </div>
+            <div class='setting-btn'> %>
+              <%# <h2 class='set-detail'>
+                ...
+              </h2> %>
+            <%# </div> 
+          </div> %>
+          <%# /いいね機能 %>
+          <%# <div class='good-tweet'>
+            <div class='good-btn'>
+              <div class='good-total'> %>
+              <%# </div>
+            </div>
+          </div> %>
+        <%# <div id="likes_buttons<%= @tweet.id %>
+          <%# <%= render partial: 'likes/like', locals: { tweet: @tweet, like: @like} %>
+        <%# </div> %>
+
       <%# 投稿の詳細ゾーン %>
       <div class='tweet-details'>
         <div class='three-details'>
@@ -57,7 +111,34 @@
     <%#コメントゾーン%>
     <div class='comment-box'>
       <div class='comment-sub-box'>
-        <%# <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
+        <%= form_with(model: [@tweet, @comment], local: true) do |form| %>
+          <%= form.text_area :text, class:"comment-area", placeholder: "To comment", rows: "2" , wrap: "soft"%>
+          <%= form.submit "SEND" , class:"comment-btn"%>
+        <% end %>
+      </div>
+      <div class='comment-index'>
+        <h4 class='comment-name'>
+          -- Comments --
+        </h4>
+        <div class='comment-scroller'>
+          <% if @comments %>
+            <% @comments.each do |comment| %>
+              <div class='comment-details'>
+                <div class='comment-contents'>
+                  <div class='name-top'>
+                    <%= link_to comment.user.nickname, "#" , class:'name-index' %>
+                  </div>
+                  <div class='comment-date'>
+                    ~ <%= l comment.created_at%> ~
+                  </div>
+                </div>
+                <div class='comment-text'>
+                    <%= comment.text %>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
       </div>
     </div>
     <%#/コメントゾーン%>
