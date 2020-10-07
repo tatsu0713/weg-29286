@@ -137,6 +137,20 @@
   cursor: pointer;
 }
 
+.set-select-second {
+  text-align: center;
+  width: 100px;
+  position: absolute;
+  left: 550px;
+  bottom: 80px;
+  background-color: #ffffffa4;
+  color: rgb(148, 141, 141);
+  font-size: 15px;
+  font-family: serif;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .tweet-details {
   background-color:rgba(255, 255, 255, 0.397);
   height: 90vh;
