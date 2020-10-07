@@ -1,6 +1,6 @@
 class TweetsController < ApplicationController
   before_action :move_to_index, except: [:index]
-  before_action :set_tweet, only: [:show]
+  before_action :set_tweet, only: [:show, :edit, :update]
 
 
   def index
@@ -25,8 +25,17 @@ class TweetsController < ApplicationController
     @comments = @tweet.comments.includes(:user)
   end
 
-  # def edit
-  # end
+  def edit
+  end
+
+  def update
+    @tweet.update(tweet_params)
+    if @tweet.valid?
+      redirect_to tweet_path
+    else
+      render :edit
+    end
+  end
 
 
 

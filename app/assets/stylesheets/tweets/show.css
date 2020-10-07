@@ -130,11 +130,14 @@
   left: 550px;
   bottom: 30px;
   background-color: #ffffffa4;
-  color: rgb(148, 141, 141);
   font-size: 15px;
   font-family: serif;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.set-down-list {
+  color: rgb(44, 43, 43);
 }
 
 .set-select-second {
