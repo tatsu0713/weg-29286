@@ -29,15 +29,19 @@
                 -- Setting Menu --
               </h1>
               <% if user_signed_in? && current_user.id == @tweet.user_id %>
-                <ul class="set-select" hidden id="set-down">
-                  <li><%= link_to 'My page', root_path, class:"set-down-list" %></li>
-                  <li><%= link_to 'Edit', edit_tweet_path(@tweet.id), method: :get, class:"set-down-list" %></li>
-                  <li><%= link_to 'Delete', tweet_path(@tweet.id), method: :delete, class:"set-down-list" %></li>
-                </ul>
+                <% if @tweet.present? %>
+                  <ul class="set-select" hidden id="set-down">
+                    <li><%= link_to 'My page', root_path, class:"set-down-list" %></li>
+                    <li><%= link_to 'Edit', edit_tweet_path(@tweet.id), method: :get, class:"set-down-list" %></li>
+                    <li><%= link_to 'Delete', tweet_path(@tweet.id), method: :delete, class:"set-down-list" %></li>
+                  </ul>
+                <% end %>
               <% else %>
-                <ul class="set-select-second" hidden id="set-down">
-                  <li class="set-down-list">User page</li>
-                </ul>
+                <% if @tweet.present? %>
+                  <ul class="set-select-second" hidden id="set-down">
+                    <li class="set-down-list">User page</li>
+                  </ul>
+                <% end %>
               <% end %>
             </div>
           </div>
