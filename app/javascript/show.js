@@ -14,10 +14,10 @@ function pullDown() {
 
   pullDownChild.forEach(function(list){
     list.addEventListener('mouseover', function(){
-      list.setAttribute("style", "background-color:black;")
+      list.setAttribute("style", "color:gold;")
     })
     list.addEventListener('mouseout', function(){
-      list.removeAttribute("style", "background-color:black;")
+      list.removeAttribute("style", "color:gold;")
     })
       // list.addEventListener('click', function(){
     // })
