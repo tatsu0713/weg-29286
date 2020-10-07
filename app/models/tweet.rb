@@ -1,7 +1,7 @@
 class Tweet < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to :user, dependent: :destroy
-  has_many :comments
+  belongs_to :user
+  has_many :comments, dependent: :destroy
   belongs_to_active_hash :brand
   belongs_to_active_hash :type
   belongs_to_active_hash :model_year
