@@ -2,7 +2,6 @@ class TweetsController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
   before_action :set_tweet, only: [:show, :edit, :update, :destroy]
 
-
   def index
     @tweet = Tweet.all.order('created_at DESC')
   end
