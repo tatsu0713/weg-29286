@@ -383,8 +383,8 @@ h2.car-information:after {
 }
 
 .loved {
-  background-image: image-url("camera.png");
-  background-repeat: no-repeat;
+  /* background-image: image-url("camera.png"); */
+  /* background-repeat: no-repeat; */
   height: 36px;
   width: 36px;
   background-size: 36px !important;
