@@ -29,7 +29,7 @@ class TweetsController < ApplicationController
 
   def update
     @tweet.update(tweet_params)
-    if @tweet.valid?
+    if @tweet.present?
       redirect_to tweet_path
     else
       render :edit
