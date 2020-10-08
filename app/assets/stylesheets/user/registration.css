@@ -2,7 +2,7 @@
   width: 100vw;
   min-width: 800px;
   height: 100%;
-  background-image: url('m03-gallery2.jpg');
+  background-image: url('../m03-gallery2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
