@@ -4,7 +4,7 @@
   width: 130px;
   height: 130px;
   font-size: 71px;
-  background: url('../abstract-1846822__480.jpg');
+  background: url('/images/abstract-1846822__480.jpg');
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: cursive;
@@ -34,7 +34,7 @@
 
 
 .items-sell-contents {
-  background-image: url("../castle-4764448_1280.jpg");
+  background-image: url("/images/castle-4764448_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
