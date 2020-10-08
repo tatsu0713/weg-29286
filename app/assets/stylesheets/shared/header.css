@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+.top-page-header {
+  width: 100vw;
+  padding: 2vh 15vw;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.search-bar-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weg-icon {
+  width: 130px;
+  height: 130px;
+  font-size: 77px;
+  color:white;
+  font-family: cursive;
+  position: relative;
+  display: inline-block;
+}
+
+.weg-icon:before, .weg-icon:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  border-top: solid 1px rgb(212, 181, 181);
+  border-bottom: solid 1px rgb(212, 181, 181);
+}
+
+.weg-icon:before {
+  left: -60px;
+}
+
+.weg-icon:after {
+  right: -70px;
+}
+
+.search-form {
+  width: 65vw;
+  height: 5vh;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.search-form>.input-box {
+  width: 100%;
+  height: 5vh;
+  padding-left: 10px;
+}
+
+.search-button {
+  width: 5vh;
+  border: 0;
+  cursor: pointer;
+  background-color: #3ccace;
+  padding: 8px;
+}
+
+.search-icon {
+  width: 100%;
+}
