@@ -21,9 +21,6 @@
   height: 130px;
   font-size: 77px;
   color:white;
-  background: url('nu1930-fk.jpg');
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-family: cursive;
   position: relative;
   display: inline-block;

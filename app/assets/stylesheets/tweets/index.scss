@@ -10,7 +10,7 @@ a {
 /* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   width: 100vw;
-  background-image: url('81207cd52f851-2619-499d-870f-65b3e0205c0f_l.jpg');
+  background-image: image-url('81207cd52f851-2619-499d-870f-65b3e0205c0f_l.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -310,7 +310,7 @@ a {
 .first-content {
   width: 80%;
   height: 250px;
-  background-image: url('img_7691-1.jpg');
+  background-image: image-url('img_7691-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   // opacity: 0.8;
@@ -329,7 +329,7 @@ a {
 .second-content {
   width: 45%;
   height: 250px;
-  background-image: url('caf507bb.jpg');
+  background-image: image-url('caf507bb.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   // opacity: 0.8;
@@ -348,7 +348,7 @@ a {
 .third-content {
   width: 80%;
   height: 250px;
-  background-image: url('original.jpg');
+  background-image: image-url('original.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   // opacity: 0.8;
