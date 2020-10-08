@@ -2,7 +2,7 @@
   width: 100vw;
   min-width: 800px;
   height: 80%;
-  background-image: url('../audi-1480086_1280.jpg');
+  background-image: url(/images/audi-1480086_1280.jpg);
   background-repeat: no-repeat;
   background-size:cover;
   display: flex;
