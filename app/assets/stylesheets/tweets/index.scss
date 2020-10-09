@@ -319,7 +319,18 @@ a {
 .first-white-content {
   width: 60%;
   height: 250px;
-  background-color: rgb(0, 133, 55);
+  background-color: rgb(255, 255, 255);
+  font-family: serif;
+  text-align: center;
+  padding: 84px 0;
+}
+
+.first-message {
+  margin-bottom: 10px;
+}
+
+.first-message-second {
+  margin-bottom: 10px;
 }
 
 .center-second-contents {
@@ -328,7 +339,7 @@ a {
 
 .second-content {
   width: 45%;
-  height: 250px;
+  height: 270px;
   background-image: image-url('caf507bb.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -337,8 +348,30 @@ a {
 
 .second-white-content {
   width: 60%;
-  height: 250px;
-  background-color: black;
+  height: 270px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: serif;
+}
+
+.second-message {
+  padding-top: 30px;
+}
+
+.second-message-second {
+  padding-top: 10px;
+}
+
+.second-message-third {
+  padding-top: 10px;
+}
+
+.second-message-fourth {
+  padding-top: 10px;
+}
+
+.second-message-fifth {
+  padding-top: 50px;
 }
 
 .center-third-contents {
@@ -357,12 +390,22 @@ a {
 .third-white-content {
   width: 60%;
   height: 250px;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
+  font-family: serif;
+  text-align: center;
 }
 
-/* 商品一覧 */
+.third-message {
+  padding-top: 60px;
+}
 
+.third-message-second {
+  padding-top: 20px;
+}
 
+.third-message-third {
+  padding-top: 20px;
+}
 
 h2.new-title {
   position: relative;
