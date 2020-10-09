@@ -34,6 +34,32 @@
             -- <%= @user %> --
           </h2>
         </div>
+        <div class="user-post">
+          <h2 class="user-bottom-post">
+            Post List
+          </h2>
+          <ul class='item-lists'>
+          <% @tweets.each do |tweet| %>
+            <li class='list'>
+              <%= link_to tweet_path(tweet.id) do %>
+              <div class='item-img-content'>
+                <%= image_tag tweet.image, class: "item-img" %>
+              </div>
+              <div class='item-info'>
+                <h3 class='item-name'>
+                  <%= tweet.title %>
+                </h3>
+                <div class='item-price'>
+                  <%# <span><%= "販売価格" %>
+                  <div class='star-btn'>
+                  </div>
+                </div>
+              </div>
+              <% end %>
+            </li>
+          <% end %>
+          </ul>
+        </div>
     </div>
   </div>
 </div>

@@ -106,15 +106,12 @@
 }
 
 .user-show-bottom {
-  /* background-image: url("/images/maldives-1993704__480.jpg"); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10vh 0 10vh;
-  height: 100vh;
+  height: 150vh;
   background-image: -webkit-linear-gradient(top, #A3A29E 0%, #B1B0AC 27%, #BCBBB7 49%, #E5E4E0 76%, #F3F2F0 100%);
   background-image: linear-gradient(to bottom, #A3A29E 0%, #B1B0AC 27%, #BCBBB7 49%, #E5E4E0 76%, #F3F2F0 100%);
 }
@@ -164,3 +161,47 @@
   font-family: serif;
 }
 
+.user-bottom-post {
+  margin-bottom: 28px;
+  padding: 90px 60px 0 70px;
+  margin-top: 73px;
+  margin-left: -20px;
+  border-bottom: 1px solid rgb(44, 44, 44);
+  text-shadow: 2px 2px rgb(228, 228, 228);
+  border-left-width: -10px;
+  width: 20vw;
+  font-family: cursive;
+  font-size: 30px;
+  position: relative;
+  color: rgb(29, 29, 29);
+}
+
+.user-bottom-post:before, .user-bottom-post:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.user-bottom-post:before {
+  width: 26px;
+  height: 26px;
+  border-radius: 70%;
+  border: 1px solid rgb(46, 46, 46);
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  bottom: -15px;
+  left: 5px;
+}
+
+.user-bottom-post:after {
+  height: 70px;
+  border-left: 1px solid rgb(49, 49, 49);
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  bottom: -32px;
+  left: 17px;
+}
+
+.user-post {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
