@@ -145,7 +145,7 @@
   width: 100px;
   position: absolute;
   left: 550px;
-  bottom: 80px;
+  bottom: 70px;
   background-color: #ffffffa4;
   color: rgb(148, 141, 141);
   font-size: 15px;
@@ -340,7 +340,6 @@ h2.car-information:after {
 
 .comment-scroller {
   overflow: auto;
-  overflow:auto;
   width:400px;
   height:200px;
   padding:20px;

@@ -1,0 +1,166 @@
+.total-user-page {
+  height: 100%;
+}
+
+.user-show {
+  background-image: url("/images/braunschweig-3952980_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0 10vh;
+  height: 100%;
+}
+
+.user-box {
+  background-color: rgba(255, 255, 255, 0.842);
+  width: 70%;
+  min-width: 1200px;
+  padding: 5vh 2vw 5vh;
+  display: flex;
+  border: 2px solid black;
+  height: 100vh;
+  margin-bottom: 20vh;
+}
+
+.title-side {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: cursive;
+  padding-left: 20px;
+  position: relative;
+  display: inline-block;
+  color: rgb(87, 34, 34);
+}
+
+.title-side:before, .title-side:after {
+  content: '';
+  position: absolute;
+  top: 55%;
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  border-top: solid 2px rgb(136, 80, 80);
+  border-bottom: solid 2px rgb(136, 80, 80);
+}
+
+.title-side:before {
+  left: 10px;
+}
+
+.title-side:after {
+  right: -18px;
+}
+
+.name-side {
+  margin-bottom: 28px;
+  padding: 5px 60px 0 50px;
+  margin-top: 73px;
+  margin-left: -20px;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  border-left-width: -10px;
+  width: 15vw;
+  font-family: cursive;
+  font-size: 44px;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+.name-side:before, .name-side:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.name-side:before {
+  width: 26px;
+  height: 26px;
+  border-radius: 70%;
+  border: 3px solid rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  bottom: -15px;
+  left: 5px;
+}
+
+.name-side:after {
+  height: 70px;
+  border-left: 3px solid rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  bottom: -32px;
+  left: 17px;
+}
+
+
+.user-boxes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 200px 0 150px;
+}
+
+.user-sub-box {
+  display: block;
+}
+
+.user-show-bottom {
+  /* background-image: url("/images/maldives-1993704__480.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0 10vh;
+  height: 100vh;
+  background-image: -webkit-linear-gradient(top, #A3A29E 0%, #B1B0AC 27%, #BCBBB7 49%, #E5E4E0 76%, #F3F2F0 100%);
+  background-image: linear-gradient(to bottom, #A3A29E 0%, #B1B0AC 27%, #BCBBB7 49%, #E5E4E0 76%, #F3F2F0 100%);
+}
+
+
+.name-bottom {
+  margin-bottom: 28px;
+  padding: 5px 60px 0 70px;
+  margin-top: 73px;
+  margin-left: -20px;
+  border-bottom: 1px solid rgb(44, 44, 44);
+  text-shadow: 2px 2px rgb(228, 228, 228);
+  border-left-width: -10px;
+  width: 20vw;
+  font-family: cursive;
+  font-size: 30px;
+  position: relative;
+  color: rgb(29, 29, 29);
+}
+
+.name-bottom:before, .name-bottom:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.name-bottom:before {
+  width: 26px;
+  height: 26px;
+  border-radius: 70%;
+  border: 1px solid rgb(46, 46, 46);
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  bottom: -15px;
+  left: 5px;
+}
+
+.name-bottom:after {
+  height: 70px;
+  border-left: 1px solid rgb(49, 49, 49);
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  bottom: -32px;
+  left: 17px;
+}
+
+.name-sub-bottom {
+  text-align: center;
+  font-family: serif;
+}
+
