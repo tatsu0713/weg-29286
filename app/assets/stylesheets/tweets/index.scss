@@ -184,7 +184,7 @@ a {
 }
 
 .service-explain {
-  font-size: 16.9px;
+  font-size: 15.5px;
   position: absolute;
   margin: 180px;
   font-family: serif;
@@ -205,83 +205,6 @@ a {
   height: 9vh;
 }
 
-/* //画面上部の「人生を変えるフリマアプリ」帯部分 */
-
-/* FURIMAが選ばれる3つの理由部分 */
-// .select-reason-contents {
-//   padding: 5vh 15vw;
-// }
-
-// .select-reason-contents>.title {
-//   text-align: center;
-//   font-size: 3.5vh;
-//   font-weight: bold;
-//   margin-bottom: 5vh;
-//   position: relative;
-// }
-
-// .select-reason-contents>.title::after {
-//   content: '';
-//   width: 70px;
-//   height: 4px;
-//   background-color: #3ccace;
-//   position: absolute;
-//   bottom: -10px;
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
-
-// .reason-lists {
-//   display: flex;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-// }
-
-// .reason-lists>.list {
-//   width: 33vh;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   position: relative;
-// }
-
-// .list-pict {
-//   margin-bottom: 20px;
-//   width: 100%;
-// }
-
-// .reason-list-number {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 60px;
-//   height: 60px;
-//   font-size: 30px;
-//   text-align: center;
-//   line-height: 60px;
-//   background-color: #3ccace;
-//   color: #fff;
-// }
-
-// .reason-list-text {
-//   font-weight: bold;
-//   font-size: 24px;
-//   line-height: 50px;
-// }
-
-// .reason-list-blue-text {
-//   color: #3ccace;
-// }
-
-// .reason-list-description {
-//   font-size: 18px;
-//   margin-top: 20px;
-// }
-
-/* //FURIMAが選ばれる3つの理由部分 */
-
-
-/* 画面中央の「会員数日本一位」帯部分*/
 
 .sub {
   background: -webkit-linear-gradient(top right, #E2E8E6 0%, #CDD3CD 100%), -webkit-linear-gradient(right, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
@@ -313,7 +236,6 @@ a {
   background-image: image-url('img_7691-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  // opacity: 0.8;
 }
 
 .first-white-content {
@@ -343,7 +265,6 @@ a {
   background-image: image-url('caf507bb.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  // opacity: 0.8;
 }
 
 .second-white-content {
@@ -384,7 +305,6 @@ a {
   background-image: image-url('original.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  // opacity: 0.8;
 }
 
 .third-white-content {
@@ -466,6 +386,7 @@ h2.new-title:after {
   justify-content: center;
   margin-top: 90px;
   margin-bottom: 80px;
+  height: 100%;
 }
 
 .item-lists>.list {
@@ -484,13 +405,6 @@ h2.new-title:after {
   height: 33vh;
   object-fit: cover;
 }
-
-
-// .sold-out>span {
-//   color: #FFF;
-//   font-size: 45px;
-//   font: bold;
-// }
 
 
 .item-info {
@@ -564,12 +478,9 @@ h2.new-title:after {
 	top:9px;
 }
 
-
-
 .hidden{
   display: none;
 }
-/* //商品一覧 */
 
 .ad-title {
   font-size: 5vh;
@@ -596,9 +507,6 @@ h2.new-title:after {
   height: 9vh;
 }
 
-/* //画面中央の「会員数日本一位」帯部分 */
-
-/* wegの特徴 */
 .feature-contents {
   padding: 5vh 15vw;
 }
@@ -645,34 +553,3 @@ h2.new-title:after {
   font-size: 18px;
   margin-top: 20px;
 }
-
-/* //wegの特徴 */
-
-
-/* 下部広告部分 */
-/* items/index.htmlの広告cssを所々使いまわしています。 */
-// .ad-footer-contents {
-//   width: 100vw;
-  // background-image: image-url('furima-footer.png');
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: top center;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   padding: 5vh 15vw;
-//   color: #fff;
-//   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
-// }
-
-// .ad-footer-title {
-//   font-size: 4vh;
-//   margin-bottom: 2vh;
-// }
-
-// .ad-footer-explain {
-//   font-size: 3vh;
-//   line-height: 30px;
-// }
-/* //下部広告部分 */
