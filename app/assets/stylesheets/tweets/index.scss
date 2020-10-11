@@ -7,7 +7,6 @@ a {
   overflow: hidden;
 }
 
-/* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   width: 100vw;
   background-image: image-url('81207cd52f851-2619-499d-870f-65b3e0205c0f_l.jpg');
@@ -32,17 +31,6 @@ a {
   width: 100%;
   position: relative;
 }
-
-// .lists-left {
-//   display: flex;
-//   min-width: 200px;
-//   position: absolute;
-// }
-
-// .brand-list {
-//   text-decoration: none;
-//   color: white;
-// }
 
 .lists-right {
   display: flex;

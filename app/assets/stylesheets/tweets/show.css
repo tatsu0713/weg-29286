@@ -94,11 +94,9 @@
   margin-top: 30px;
   display: flex;
   height: 10vh;
-  /* border: 1px solid black; */
 }
 
 .good-btn {
-  /* border: 1px solid black; */
   width: 20vw;
 }
 
@@ -112,7 +110,6 @@
 }
 
 .setting-btn {
-  /* border: 1px solid black; */
   width: 150px;
   height: 5vh;
   margin-left: 130px;
@@ -321,6 +318,7 @@ h2.car-information:after {
   font-size: 15px;
   margin-bottom: -10px;
   padding: 5px;
+  white-space: pre-wrap;
 }
 
 .comment-btn {
@@ -373,11 +371,11 @@ h2.car-information:after {
 }
 
 .comment-text {
-  /* white-space: pre-wrap; */
   text-align: left;
   border: 1px solid rgb(160, 160, 160);
   border-radius: 10px;
   padding: 10px;
+  /* white-space: pre-wrap; */
 }
 
 .name-index {
@@ -385,8 +383,6 @@ h2.car-information:after {
 }
 
 .loved {
-  /* background-image: image-url("camera.png"); */
-  /* background-repeat: no-repeat; */
   height: 36px;
   width: 36px;
   background-size: 36px !important;
